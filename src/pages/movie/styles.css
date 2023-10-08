@@ -1,51 +1,104 @@
+/* nav */
 nav {
   display: flex;
-  align-items: center;
+  align-items: center; /* Center vertically */
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
 }
+
+/* nav h1 */
 nav h1 {
+  font-size: 2.5rem;
+  color: #FF5733;
+  margin: 2.5rem 0;
   text-align: center;
 }
 
+/* .container */
 .container {
   text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center vertically */
 }
 
+/* .container-pai */
+.container-pai {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 60vw;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.container h3{
+  opacity: 50%;
+  margin-top: 0.5rem;
+}
+
+/* .link_button */
 .link_button {
+  width: 20rem;
   margin-top: 5px;
   padding: 0.7rem 3rem;
   border: none;
-  border-radius: 15px;
-  color: #212121;
-  background-color: #ffffff;
-  font-weight: 1000;
-  font-size: 12 px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #FF5733;
+  font-weight: 700;
+  font-size: 1rem;
   cursor: pointer;
-  transition: all 250ms;
-}
-.link_button:hover{
-  transform: scale(1.1);
+  transition: all 0.50s;
+  margin-bottom: 2rem; /* Add margin to separate from other elements */
 }
 
+.link_button:hover {
+  background-color: #FA2500;
+  transform: scale(1.05);
+}
+
+/* .img_movie */
 .img_movie {
-  width: 20%;
-  margin: 0 40%;
+  width: 20rem; /* Increase the width to your desired size */
+  height: 40vh; /* Set the height to maintain aspect ratio */
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center vertically */
 }
 
+/* .movie-desc */
 .movie-desc {
   text-align: justify;
+  padding: 2rem;
 }
+
+/* .descricao */
 .descricao {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 0 30%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
 }
+
+/* .descricao h4 */
 .descricao h4 {
-  font-size: 24px;
+  text-align: center;
+  font-size: 2rem;
 }
+
+/* .descricao p */
 .descricao p {
-  text-indent: 30px;
+  text-indent: 0;
+  text-align: center;
+}
+
+.trailer{
+  width: 80%;
+  margin-bottom: 2.5rem;
 }
