@@ -62,7 +62,6 @@ function Home() {
                 onChange={handleSearchInputChange}
             />
             <SelectContainer> {/* Use o SelectContainer aqui */}
-                <label htmlFor="category-select">Selecione uma categoria:</label>
                 <select id="category-select" value={selectedCategory} onChange={handleCategoryChange}>
                     <option value="all">Popular</option>
                     <option value="28">Ação</option>

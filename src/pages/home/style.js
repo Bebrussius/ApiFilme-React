@@ -93,32 +93,35 @@ export const SearchInput = styled.input`
 `;
 
 export const SelectContainer = styled.div`
-    display: flex;
-    align-items: center;
-    
-    label {
-        margin-right: 1rem;
-        font-size: 1rem;
-        color: #fff;
+  display: flex;
+  align-items: center;
+  width: 50%; /* Defina o width desejado em 'em' aqui */
+  
+  label {
+    width: 20.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  select {
+    width: 100%; /* Ocupa todo o espaço disponível */
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      border-color: #FF5733;
     }
 
-    select {
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 1rem;
-        background-color: #fff;
-        color: #333;
-        cursor: pointer;
-        transition: border-color 0.3s, box-shadow 0.3s; /* Adicione a transição aqui */
-
-        &:hover {
-            border-color: #FF5733;
-        }
-
-        &:focus {
-            border-color: #FF5733;
-            box-shadow: 0 0 0 2px rgba(255, 87, 51, 0.2);
-        }
+    &:focus {
+      border-color: #FF5733;
+      box-shadow: 0 0 0 2px rgba(255, 87, 51, 0.2);
     }
+  }
 `;
